@@ -1,11 +1,12 @@
-import './Message.css'
 // import { useState } from "react"
+// import { useEffect } from 'react'
 import React from 'react'
 import './Message.css'
+import Loginoo from './Loginoo'
 
 const Message = () => {
-  const messagesURL = "http://206.189.91.54//api/v1/messages"
-  const loginURL = "http://206.189.91.54/api/v1/auth/sign_in"
+//   const messagesURL = "http://206.189.91.54/api/v1/messages"
+  
   // const [variable, setVariableState] = useState("huh?")
 
   let user = {
@@ -13,23 +14,6 @@ const Message = () => {
     "password": "chibby1234"
   }
   
-  const loginMuna = async (e) => {
-    // e.preventDefault()
-
-    let loginResponse = await fetch(loginURL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(user)
-    })
-
-    let result = await loginResponse.json()
-    setTimeout(() => alert(result.message), 175)
-  }
-
-  loginMuna()
-
   // const messageSend = async () => {
   //   let response = await fetch(messagesURL)
 
@@ -47,9 +31,7 @@ const Message = () => {
         <button className="sendButton">
             Send
         </button>
-        <button onClick={loginMuna}>
-            Sign-in lmao
-        </button>
+        <Loginoo userchibby={user} />
       </div>
       <div className="sharedChatBox">
         
