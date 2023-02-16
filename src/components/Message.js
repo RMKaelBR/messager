@@ -2,7 +2,7 @@
 // import { useEffect } from 'react'
 import React from 'react'
 import './Message.css'
-import Loginoo from './Loginoo'
+import LoginButton from './LoginButton'
 
 const Message = () => {
 //   const messagesURL = "http://206.189.91.54/api/v1/messages"
@@ -31,7 +31,7 @@ const Message = () => {
         <button className="sendButton">
             Send
         </button>
-        <Loginoo userchibby={user} />
+        <LoginButton userchibby={user} />
       </div>
       <div className="sharedChatBox">
         

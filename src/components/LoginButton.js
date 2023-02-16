@@ -1,7 +1,7 @@
 import React from 'react'
 // import { useEffect } from 'react'
 
-const Loginoo = (userchibby) => {
+const LoginButton = (userchibby) => {
     const loginURL = "http://206.189.91.54/api/v1/auth/sign_in"
     
     // useEffect(() => {
@@ -31,4 +31,4 @@ const Loginoo = (userchibby) => {
     )
 }
 
-export default Loginoo
+export default LoginButton
