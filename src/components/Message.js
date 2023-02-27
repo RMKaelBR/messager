@@ -10,8 +10,8 @@ const Message = () => {
   // const [variable, setVariableState] = useState("huh?")
 
   let user = {
-    "email": "chibby@mail.com",
-    "password": "chibby1234"
+    email: "chibby@mail.com",
+    password: "chibby1234"
   }
   
   // const messageSend = async () => {

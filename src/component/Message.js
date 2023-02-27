@@ -25,6 +25,7 @@ const Message = ({setCurrentUser}) => {
 
     const result = await loginResponse.json()
     // setCurrentUser (result)
+    console.log(result)
     setTimeout(() => alert(result), 175)
   }
 
