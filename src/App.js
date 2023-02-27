@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Message from './component/Message'
+import React from 'react'
+// import ChangeForm from './component/Register';
 
 function App() {
+
+  const [currentUser, setCurrentUser] = React.useState("")
+
+  console.log(`This is the currentUser: ${currentUser}`)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Message setCurrentUser = {setCurrentUser} />
+      {/* <ChangeForm /> */}
     </div>
   );
 }
-
+//.
 export default App;
